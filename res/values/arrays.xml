@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="landing_bg">
+        <item>#3498db</item>
+        <item>@color/light_cyan</item>
+        <item>@color/light_green</item>
+        <item>@color/light_orange</item>
+        <item>#2980b9</item>
+
+    </array>
+
+    <array name="icons">
+        <item>@drawable/icon_intro</item>
+        <item>@drawable/basic</item>
+        <item>@drawable/selection</item>
+        <item>@drawable/slider</item>
+        <item>@drawable/completed</item>
+
+    </array>
+
+    <string-array name="titles" >
+
+        <item>Kontak</item>
+        <item>Welcome friend.</item>
+        <item>How do I use it?</item>
+        <item>Make it temporary</item>
+        <item>Easy eh?</item>
+
+    </string-array>
+
+    <string-array name="hints" >
+
+        <item>Temporary Contacts</item>
+        <item>Kontak is an app for adding temporary \ncontacts to your phone!</item>
+        <item>To use Kontak all you need is to wait for an \nincoming call and a popup will appear!</item>
+        <item>In the popup you can select the amount of\ntime that the contact will last!</item>
+        <item>It\'s that simple. Enjoy using Kontak.</item>
+
+    </string-array>
+</resources>

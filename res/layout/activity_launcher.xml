@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/landing_backgrond"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/textView1" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="@string/hello_world" /> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/demo_btn" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_below="@+id/textView1" -->
+    <!-- android:layout_marginTop="142dp" -->
+    <!-- android:layout_toRightOf="@+id/textView1" -->
+    <!-- android:drawableLeft="@drawable/phone" -->
+    <!-- android:drawableStart="@drawable/phone" -->
+    <!-- android:text="Button" /> -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" />
+
+    <com.kontak.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/padding_normal" />
+
+</RelativeLayout>

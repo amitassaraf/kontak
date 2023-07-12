@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2185aa"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#1c7292" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <com.kontak.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Kontak"
+                android:textColor="#ffffff"
+                android:textSize="44dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_icon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/icon_v3" />
+
+    <ImageView
+        android:id="@+id/main_settings_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/gear39" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#28a1ce"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.kontak.RobotoTextView
+        android:id="@+id/no_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_icon"
+        android:layout_centerHorizontal="true"
+        android:text="Sorry, you have no contacts :("
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/main_icon"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <com.gc.materialdesign.views.ButtonFloat
+        xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/new_contact_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="12dp"
+        android:background="#2185aa"
+        materialdesign:animate="true"
+        materialdesign:iconDrawable="@drawable/ic_action_new" />
+
+</RelativeLayout>
